@@ -15,21 +15,16 @@
     <?php
         echo"What's up</br>";
         echo"\n by Suparoek Kerdrat </br>";
-        print("print(): ljsrklsr;rhk");
+        print("are u wan no");
     ?>
 <h1> ยินดีต้อนรับเข้าสู่ website </h1>
-<h2> ยินดีต้อนรับเข้าสู่ website </h2>
-<h3> ยินดีต้อนรับเข้าสู่ website </h3>
-<h4> ยินดีต้อนรับเข้าสู่ website </h4>
-<h5> ยินดีต้อนรับเข้าสู่ website </h5>
-<h6> ยินดีต้อนรับเข้าสู่ website </h6>
 
-<h2> <?php echo date("Y-m-d"); ?> </h5>
+<h2> <?php echo date("d-m-Y"); ?> </h5>
 
 <h2>
     <?php
     $year = 2024;
-    echo "<h1> Happy New Year ". $year . " Bitch!! </h1>";
+    echo "<h1> What's up ". $year . " </h1>";
     ?>
 </h2>
 
