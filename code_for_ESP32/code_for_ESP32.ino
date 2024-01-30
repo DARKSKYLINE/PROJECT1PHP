@@ -4,9 +4,9 @@
 const char WIFI_SSID[] = "SUltra";
 const char WIFI_PASSWORD[] = "autismood";
 
-String HOST_NAME = "192.168.135.235"; // change to your PC's IP address
-String PATH_NAME   = "PROJECT1/espmain.php";
-String queryString = "?temperature=30.5";
+String HOST_NAME = "http://192.168.135.235/project1"; // change to your PC's IP address
+String PATH_NAME   = "/espmain.php";
+String queryString = "?temperature=40.5";
 
 void setup() {
   Serial.begin(9600); 
@@ -38,7 +38,7 @@ void setup() {
       Serial.printf("[HTTP] GET... code: %d\n", httpCode);
     }
   } else {
-    Serial.printf("[HTTP] GET... failed again, error: %s\n", http.errorToString(httpCode).c_str());
+    Serial.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
   }
 
   http.end();
